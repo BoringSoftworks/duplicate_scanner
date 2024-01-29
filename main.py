@@ -13,7 +13,9 @@ def remove_duplicates():
 
     with open(output_file, 'w') as file:
         for line in unique_lines:
-            file.write(line + '\n')
+            # Depending on the formatting of the file, you may need to adjust the following line
+            #file.write(line + '\n')
+            file.write(line)
 
 if __name__ == '__main__':
     remove_duplicates()
